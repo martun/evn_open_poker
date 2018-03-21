@@ -2,6 +2,18 @@
 
 CardsAbstractionProvider::CardsAbstractionProvider()
 {
+    this->storage.load();
+}
+
+uint32_t CardsAbstractionProvider::get_hand_iso_number(
+        const std::vector<Card>& hole_cards,
+        const std::vector<Card>& public_cards){
+   uint32_t publicIso=get_public_cards_iso_number(public_cards);
+    uint8_t x=hole_cards[0].get_suit()*4+hole_cards[0].get_rank();
+    uint8_t y=hole_cards[1].get_suit()*4+hole_cards[1].get_rank();
+    if(x>y)
+        std::swap(x,y);
+    return uint32_t (publicIso*pow(52,52)+(x*52+y));
 }
 
 uint32_t CardsAbstractionProvider::get_public_cards_iso_number(const std::vector<Card>& public_cards){
@@ -28,11 +40,11 @@ uint32_t CardsAbstractionProvider::get_public_cards_iso_number(const std::vector
 }
 
 void CardsAbstractionProvider::get_canonical_public_cards(
-        uint32_t iso_number, Round round_,std::vector<Card>& public_cards_out)
+        uint32_t iso_number, Round r,std::vector<Card> &public_cards_out)
 {
     auto search= storage.flop_card_table.find(iso_number);;
 
-    switch(round_) {
+    switch(r) {
         case FLOP :
             search = storage.flop_card_table.find(iso_number);
             break;
@@ -43,14 +55,41 @@ void CardsAbstractionProvider::get_canonical_public_cards(
         case RIVER:
             search = storage.flop_card_table.find(iso_number);
     }
-    std::vector<std::vector<uint8_t >> c=search->second;
+    std::vector<Card> c=search->second;
     for(uint8_t i=0;i<c.size();++i) {
-        if(!c[i].empty()) {
-            for (uint8_t j = 0; j < c[i].size(); ++j) {
-               Card *card_ = new Card((uint8_t) i * 4 + j);
-//                public_cards_out.insert(card_)
+                public_cards_out.push_back(c[i]);
             }
         }
+
+
+
+
+void CardsAbstractionProvider::get_canonical_cards_combination(
+        uint32_t iso_number,Round r,
+        std::vector<Card>& hole_cards_out,
+        std::vector<Card>& public_cards_out){
+        uint32_t holeIsoNumber=iso_number%((uint32_t)pow(52,52));
+        uint8_t x=holeIsoNumber/52;
+        uint8_t y=holeIsoNumber%52;
+        hole_cards_out.push_back(*(new Card(x)));
+        hole_cards_out.push_back(*(new Card(y)));
+        uint32_t publicIsoNUmber=uint32_t((iso_number-holeIsoNumber)/pow(52,52));
+        get_canonical_public_cards(publicIsoNUmber,r,public_cards_out);
+}
+
+
+
+uint32_t CardsAbstractionProvider::get_iso_public_cards_number(Round r){
+
+    switch(r) {
+        case PREFLOP:
+            //We asume that the argument r can't be PREFLOP//
+        case FLOP :
+            return storage.flop_card_table.size();
+        case TURN:
+            return storage.turn_card_table.size();
+        case RIVER:
+            return storage.river_card_table.size();
     }
 }
 

@@ -12,5 +12,3 @@ uint8_t Card:: get_suit() const{
 uint8_t Card:: get_rank() const{
     return uint8_t(card_/4);
 }
-
-

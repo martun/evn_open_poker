@@ -27,13 +27,14 @@ void CardsAbstractionHelper::river_optimezer(std::vector<std::vector<uint8_t>> *
         }
     }
 }
- void CardsAbstractionHelper::insert(std::unordered_map<uint32_t ,std::vector<std::vector<uint8_t >>> *card_table,
-                                     std::unordered_map<size_t ,uint32_t >*index_table,std::vector<std::vector<uint8_t >> *possible_combination, uint32_t *index){
+ void CardsAbstractionHelper::insert_(std::vector<std::vector<uint8_t >> *possible_combination, std::vector<Card>* cards,
+                                      uint32_t *index,std::unordered_map<size_t, uint32_t> *index_table,
+                                      std::unordered_map<uint32_t, std::vector<Card>> *card_table){
     size_t hash_=hash(possible_combination);
     int initial_size=index_table->size();
     index_table->insert({{hash_,*index}});
     if(initial_size<index_table->size()){
-        card_table->insert({{*index,*possible_combination}});
+        card_table->insert({{*index,*cards}});
         *index+=1;
     }
 }

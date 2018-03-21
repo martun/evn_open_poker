@@ -1,18 +1,19 @@
 #include "../cards_abstraction_builder.h"
-
-#include <stdint.h>
-#include "vector"
 #include "../Utils.h"
-#include "../card.h"
 
-CardsAbstractionBuilder::CardsAbstractionBuilder()
+CardsAbstractionBuilder::CardsAbstractionBuilder(CardsAbstractionStorage &s)
 {
+    this->storage=s;
 }
 void CardsAbstractionBuilder::build_all(){
     build_flop();
     build_turn();
     build_river();
     storage.save();
+}
+
+const CardsAbstractionStorage &CardsAbstractionBuilder::getStorage() const {
+    return storage;
 }
 
 void CardsAbstractionBuilder::build_flop(){
@@ -30,13 +31,15 @@ void CardsAbstractionBuilder::build_flop(){
                 CardsAbstractionHelper::add_card(card_3,&possible_combination);
                 CardsAbstractionHelper::erase_emptys(&possible_combination);
                 CardsAbstractionHelper::sort_vector(&possible_combination);
-                CardsAbstractionHelper::insert(&storage.flop_card_table,
-                                               &storage.flop_index_table,
-                                               &possible_combination,&index);
+                std::vector<Card> cards;
+                cards.push_back(*card_1);
+                cards.push_back(*card_2);
+                cards.push_back(*card_3);
+                CardsAbstractionHelper::insert_(&possible_combination,&cards, &index,
+                                                &storage.flop_index_table,&storage.flop_card_table);
             }
         }
     }
-    std::cout<<storage.flop_card_table.size()<<std::endl;
 }
 
 void CardsAbstractionBuilder::build_turn(){
@@ -57,15 +60,17 @@ void CardsAbstractionBuilder::build_turn(){
                     CardsAbstractionHelper::add_card(card_4,&possible_combination);
                     CardsAbstractionHelper::erase_emptys(&possible_combination);
                     CardsAbstractionHelper::sort_vector(&possible_combination);
-                    CardsAbstractionHelper::insert(&storage.turn_card_table,
-                                                   &storage.turn_index_table,
-                                                   &possible_combination,&index);;
-
+                    std::vector<Card> cards;
+                    cards.push_back(*card_1);
+                    cards.push_back(*card_2);
+                    cards.push_back(*card_3);
+                    cards.push_back(*card_4);
+                    CardsAbstractionHelper::insert_(&possible_combination,&cards, &index,
+                                                    &storage.turn_index_table,&storage.turn_card_table);
                 }
             }
         }
     }
-    std::cout<<storage.turn_card_table.size()<<std::endl;
 }
 void CardsAbstractionBuilder::build_river(){
     uint32_t index=0;
@@ -89,19 +94,20 @@ void CardsAbstractionBuilder::build_river(){
                         CardsAbstractionHelper::river_optimezer(&possible_combination);
                         CardsAbstractionHelper::erase_emptys(&possible_combination);
                         CardsAbstractionHelper::sort_vector(&possible_combination);
-                        CardsAbstractionHelper::insert(&storage.river_card_table,
-                                                       &storage.river_index_table,
-                                                       &possible_combination,&index);;
+                        std::vector<Card> cards;
+                        cards.push_back(*card_1);
+                        cards.push_back(*card_2);
+                        cards.push_back(*card_3);
+                        cards.push_back(*card_4);
+                        cards.push_back(*card_5);
+                        CardsAbstractionHelper::insert_(&possible_combination,&cards, &index,
+                                                        &storage.river_index_table,&storage.river_card_table);
                     }
                 }
             }
         }
     }
-    std::cout<<storage.river_card_table.size()<<std::endl;
 }
-
-
-
 
 
 

@@ -1,5 +1,6 @@
 #pragma once
 
+#define CARDS 52
 // Enum for poker rounds.
 enum Round {
 	PREFLOP = 0,

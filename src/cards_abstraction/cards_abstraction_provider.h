@@ -35,8 +35,8 @@ public:
 	*  \param[out] public_cards_out Canonical Public cards for the given isomorphic number.
 	*/
 	void get_canonical_cards_combination(
-		uint32_t iso_number, 
-		std::vector<Card>& hole_cards_out, 
+		uint32_t iso_number, Round r,
+        std::vector<Card>& hole_cards_out,
 		std::vector<Card>& public_cards_out);
 
 	// Returns the total number of iso public cards for the given round.
