@@ -14,19 +14,21 @@ class CardsAbstractionBuilder
 {
 public:
 	CardsAbstractionBuilder(CardsAbstractionStorage&);
-    // Once called this function must build all the required
+  // Once called this function must build all the required
 	// Look-up tables, such that those tables can be used
 	// later by cards_abstraction_provider class.
 	void build_all();
+	void build_preflop();
 	void build_flop();
 	void build_turn();
 	void build_river();
 
-	const CardsAbstractionStorage &getStorage() const;
+	const CardsAbstractionStorage& getStorage() const;
 
 
 private:
-    CardsAbstractionStorage storage;
+  CardsAbstractionStorage storage;
+
 };
 
 

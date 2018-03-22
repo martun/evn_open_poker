@@ -9,11 +9,15 @@ void CardsAbstractionBuilder::build_all(){
     build_flop();
     build_turn();
     build_river();
-    storage.save();
+    storage.save("cardsAbstractionLUTs.bin");
 }
 
 const CardsAbstractionStorage &CardsAbstractionBuilder::getStorage() const {
     return storage;
+}
+
+void CardsAbstractionBuilder::build_preflop() {
+
 }
 
 void CardsAbstractionBuilder::build_flop(){
