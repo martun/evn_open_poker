@@ -1,3 +1,0 @@
-[submodule "third_party/hand-isomorphism"]
-	path = third_party/hand-isomorphism
-	url = https://github.com/kdub0/hand-isomorphism.git
