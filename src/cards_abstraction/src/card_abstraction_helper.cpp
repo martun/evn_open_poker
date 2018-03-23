@@ -53,14 +53,13 @@ void CardsAbstractionHelper::insert_(
 size_t CardsAbstractionHelper::hash(const std::vector<std::vector<uint8_t >>* v) {
     std::hash<uint8_t > hasher;
     size_t seed = 0;
-    // TODO(levon): rename ii to something more meaningful.
-    int ii = INT_MAX;
+    int helper = INT_MAX;
     for(std::vector<uint8_t > i: *v) {
         for (int j : i) {
             seed ^= hasher(j) + 0x9e3779b9 + (seed << 6) + (seed >> 2);
         }
-        ii += 55;
-        seed ^= hasher(ii) + 0x9e3779b9 + (seed << 6) + (seed >> 2);
+        helper += 55;
+        seed ^= hasher(helper) + 0x9e3779b9 + (seed << 6) + (seed >> 2);
     }
     return seed;
 }

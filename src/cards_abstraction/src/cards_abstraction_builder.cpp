@@ -6,6 +6,7 @@ CardsAbstractionBuilder::CardsAbstractionBuilder(CardsAbstractionStorage &s)
     this->storage=s;
 }
 void CardsAbstractionBuilder::build_all(){
+    build_preflop();
     build_flop();
     build_turn();
     build_river();
@@ -17,9 +18,25 @@ const CardsAbstractionStorage &CardsAbstractionBuilder::getStorage() const {
 }
 
 void CardsAbstractionBuilder::build_preflop() {
-
+    uint32_t index=0;
+    for (int i = 0; i < CARDS; i++) {
+        Card *card_1 = new Card(i);
+        for (int j = i + 1; j < CARDS; j++) {
+            Card *card_2 = new Card(j);
+            std::vector<std::vector<uint8_t >> possible_combination;
+            possible_combination.resize(4);
+            CardsAbstractionHelper::add_card(card_1, &possible_combination);
+            CardsAbstractionHelper::add_card(card_2, &possible_combination);
+            CardsAbstractionHelper::erase_emptys(&possible_combination);
+            CardsAbstractionHelper::sort_vector(&possible_combination);
+            std::vector<Card> cards;
+            cards.push_back(*card_1);
+            cards.push_back(*card_2);
+            CardsAbstractionHelper::insert_(&possible_combination,&cards, &index,
+                                            &storage.preflop_index_table,&storage.preflop_card_table);
+        }
+    }
 }
-
 void CardsAbstractionBuilder::build_flop(){
     uint32_t index=0;
     for (int i = 0; i < CARDS; i++) {

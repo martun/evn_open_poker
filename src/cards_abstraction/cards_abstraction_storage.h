@@ -39,6 +39,9 @@ public:
       std::string& str_out) const;
 
 public:
+    std::unordered_map<unsigned int,std::vector<Card>> preflop_card_table;
+    std::unordered_map<size_t ,unsigned int> preflop_index_table;
+
     std::unordered_map<unsigned int,std::vector<Card>> flop_card_table;
     std::unordered_map<size_t ,unsigned int> flop_index_table;
 
