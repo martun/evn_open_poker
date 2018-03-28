@@ -17,7 +17,7 @@ void EhsLutBuilder::buildAll() {
 }
 
 void EhsLutBuilder::buildPreflop(){
-    for (uint8_t i=0;i<PreflopTableSize;++i) {
+    for (uint8_t i = 0;i < PreflopTableSize; ++i) {
         std::vector<Card> holeCards;
         std::vector<Card> public_c; //this is empty.
         abstractionProvider->get_canonical_cards_combination(i, PREFLOP, holeCards, public_c);
@@ -26,7 +26,7 @@ void EhsLutBuilder::buildPreflop(){
 }
 
 void EhsLutBuilder::buildFlop(){
-    for (uint32_t i=0;i<abstractionProvider->get_iso_public_cards_number(FLOP);++i) {
+    for (uint32_t i = 0;i < abstractionProvider->get_iso_public_cards_number(FLOP); ++i) {
         std::vector<Card> public_cards;
         abstractionProvider->get_canonical_public_cards(i,FLOP,public_cards);
         compute_insert_flop(public_cards);
@@ -34,7 +34,7 @@ void EhsLutBuilder::buildFlop(){
 }
 
 void EhsLutBuilder::buildTurn(){
-    for (uint32_t i=0;i<abstractionProvider->get_iso_public_cards_number(TURN);++i) {
+    for (uint32_t i = 0;i < abstractionProvider->get_iso_public_cards_number(TURN); ++i) {
         std::vector<Card> public_cards;
         abstractionProvider->get_canonical_public_cards(i,TURN,public_cards);
         compute_insert_turn(public_cards);
@@ -42,7 +42,7 @@ void EhsLutBuilder::buildTurn(){
     }
 }
 void EhsLutBuilder::buildRiver() {
-    for (uint32_t i=0;i<abstractionProvider->get_iso_public_cards_number(RIVER); ++i) {
+    for (uint32_t i = 0;i < abstractionProvider->get_iso_public_cards_number(RIVER); ++i) {
         std::vector<Card> public_cards;
         abstractionProvider->get_canonical_public_cards(i,RIVER,public_cards);
         compute_insert_river(public_cards);
@@ -148,14 +148,14 @@ void EhsLutBuilder::compute_insert_flop(std::vector<Card>& public_cards) {
                     if (&oppc2 == &myc1 ||
                         &oppc2 == &myc2)
                         continue;
-                    for(Card pub4card(0);pub4card.get_card_num()<CARDNUM;++pub4card){
+                    for(Card pub4card(0);pub4card.get_card_num() < CARDNUM;++pub4card){
                         if (&pub4card == &myc1 ||
                             &pub4card == &myc2 ||
                             &pub4card == &oppc1 ||
                             &pub4card == &oppc2)
                             continue;
                         for(Card pub5card(pub4card.get_card_num()+1);
-                            pub5card.get_card_num()<CARDNUM;
+                            pub5card.get_card_num() < CARDNUM;
                             ++pub5card){
                             if (&pub5card == &myc1 ||
                                 &pub5card == &myc2 ||
@@ -188,8 +188,8 @@ void EhsLutBuilder::compute_insert_flop(std::vector<Card>& public_cards) {
                 }
             }
 
-            double ehs= desired / whole_count;
-            double ehs_suqared=(desired * desired) / (whole_count * whole_count);
+            double ehs = desired / whole_count;
+            double ehs_suqared = (desired * desired) / (whole_count * whole_count);
             insert(ehs,ehs_suqared,hole_cards,public_cards,
                    storage.flop_ehs_table,
                    storage.flop_ehs_squared_table);
@@ -214,7 +214,7 @@ void EhsLutBuilder::compute_insert_turn(std::vector<Card>& public_cards) {
                     if (&oppc2 == &myc1 ||
                         &oppc2 == &myc2)
                         continue;
-                    for(Card pub5card(0);pub5card.get_card_num()<CARDNUM;++pub5card){
+                    for(Card pub5card(0);pub5card.get_card_num() < CARDNUM;++pub5card){
                         if (&pub5card == &myc1 ||
                             &pub5card == &myc2 ||
                             &pub5card == &oppc1 ||
@@ -245,8 +245,8 @@ void EhsLutBuilder::compute_insert_turn(std::vector<Card>& public_cards) {
                 }
             }
 
-            double ehs= desired / whole_count;
-            double ehs_suqared=(desired * desired) / (whole_count * whole_count);
+            double ehs = desired / whole_count;
+            double ehs_suqared = (desired * desired) / (whole_count * whole_count);
             insert(ehs,ehs_suqared,hole_cards,public_cards,
                    storage.turn_ehs_table,
                    storage.turn_ehs_squared_table);
@@ -257,18 +257,18 @@ void EhsLutBuilder::compute_insert_turn(std::vector<Card>& public_cards) {
 
 
 void EhsLutBuilder::compute_insert_river(std::vector<Card>& public_cards){
-    for (Card myc1(0);myc1.get_card_num()<CARDNUM;++myc1) {
+    for (Card myc1(0);myc1.get_card_num() < CARDNUM;++myc1) {
         std::vector<Card> hole_cards;
         hole_cards.push_back(myc1);
-        for (Card myc2(myc1.get_card_num()+1);myc2.get_card_num()<CARDNUM;++myc2){
+        for (Card myc2(myc1.get_card_num()+1);myc2.get_card_num() < CARDNUM;++myc2){
             hole_cards.push_back(myc2);
             double desired=0;
             double whole_count=0;
-            for (Card oppc1(0);oppc1.get_card_num()<CARDNUM;++oppc1) {
+            for (Card oppc1(0);oppc1.get_card_num() < CARDNUM;++oppc1) {
                 if(&oppc1 == &myc1 ||
                    &oppc1 == &myc2)
                     continue;
-                for(Card oppc2(oppc1.get_card_num()+1);oppc2.get_card_num()<CARDNUM;++oppc2){
+                for(Card oppc2(oppc1.get_card_num()+1);oppc2.get_card_num() < CARDNUM;++oppc2){
                     if(&oppc2 == &myc1 ||
                        &oppc2 == &myc2)
                         continue;
@@ -295,8 +295,8 @@ void EhsLutBuilder::compute_insert_river(std::vector<Card>& public_cards){
                     whole_count++;
                 }
             }
-            double ehs= desired / whole_count;
-            double ehs_suqared=(desired * desired) / (whole_count * whole_count);
+            double ehs = desired / whole_count;
+            double ehs_suqared = (desired * desired) / (whole_count * whole_count);
             insert(ehs,ehs_suqared,hole_cards,public_cards,
                    storage.river_ehs_table,
                    storage.river_ehs_squared_table);
@@ -309,7 +309,7 @@ void EhsLutBuilder::insert(double ehs, double ehs_squared,
                            std::vector<Card>& public_cards,
                            std::unordered_map<uint32_t ,double >& ehs_table_out,
                            std::unordered_map<uint32_t ,double >& ehs_squared_table_out){
-    uint32_t  isoNum=abstractionProvider->get_hand_iso_number(hole_cards,public_cards);
+    uint32_t  isoNum = abstractionProvider->get_hand_iso_number(hole_cards,public_cards);
     ehs_table_out.insert({{isoNum,ehs}});
     ehs_squared_table_out.insert({{isoNum,ehs_squared}});
 }
