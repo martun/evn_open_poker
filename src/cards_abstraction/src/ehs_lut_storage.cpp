@@ -53,20 +53,33 @@ void EhsLutStorage::load(std::shared_ptr<CardsAbstractionProvider>& cardsAbstrac
 
 void EhsLutStorage::save_to_string(std::unordered_map<uint32_t ,double >& table,
                                    std::string& str_out) const {
-    uint32_t str_size=table.size()*(sizeof(uint32_t)+ sizeof(double));
+    uint32_t str_size = table.size() * (sizeof(uint32_t) + sizeof(double));
     str_out.resize(str_size);
     int count = 0;
     auto itr = table.begin();
     while(count!=str_size) {
         memcpy(&str_out[0] + count, &itr->first, sizeof(uint32_t));
-        count+= sizeof(uint32_t);
+        count += sizeof(uint32_t);
         std::memcpy(&str_out[0] + count, &itr->second, sizeof(double));
-        count+= sizeof(double);
+        count += sizeof(double);
         itr++;
     }
 }
 
-void EhsLutStorage::load_from_string(std::string& str_out,
+void EhsLutStorage::load_from_string(std::string& str,
                                      std::unordered_map<uint32_t ,double >& table_out) const {
+    uint32_t size = str.size() / (sizeof(uint32_t) + sizeof(double));
+    uint8_t step = sizeof(uint32_t) + sizeof(double);
+    uint32_t count =0;
+    while(count != size){
 
+       uint32_t isoNum;
+       memcpy(&isoNum,&str[0]+count * step, sizeof(uint32_t));
+
+       double ehsVal;
+       memcpy(&ehsVal,&str[0]+count * step + sizeof(uint32_t), sizeof(double));
+
+       table_out.insert({{isoNum,ehsVal}});
+       count++;
+    }
 }

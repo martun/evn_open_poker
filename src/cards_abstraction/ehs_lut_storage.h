@@ -13,7 +13,7 @@ public:
     void save_to_string(std::unordered_map<uint32_t ,double >& table,
                         std::string& str_out) const;
 
-    void load_from_string(std::string& str_out,
+    void load_from_string(std::string& str,
                           std::unordered_map<uint32_t ,double >& table_out) const;
 
     std::unordered_map<uint32_t ,double > preflop_ehs_table;
