@@ -14,9 +14,16 @@ public:
 	/// Returns the rank of the card, a number from range [0..12].
 	uint8_t get_rank() const;
 
+	uint8_t get_card_num() const;
+
+	Card operator==(const Card& other){
+
+		return this->card_==other.card_;
+	}
+
 	Card operator++(){
-		Card result (this->get_card_num()+1);
-		return result;
+		card_++;
+		return *this;
 	}
 private:
 	// Stores the card number in it, a number from 0..52, where the last 2 bits show the suit.
