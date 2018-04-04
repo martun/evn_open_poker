@@ -1,2 +1,0 @@
-/usr/bin/ar qc libEhsLib.a  CMakeFiles/EhsLib.dir/ehs_lut_builder.cpp.o CMakeFiles/EhsLib.dir/ehs_lut_storage.cpp.o CMakeFiles/EhsLib.dir/ehs_lut_provider.cpp.o
-/usr/bin/ranlib libEhsLib.a

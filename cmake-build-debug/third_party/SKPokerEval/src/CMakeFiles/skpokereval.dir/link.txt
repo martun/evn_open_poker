@@ -1,2 +1,0 @@
-/usr/bin/ar qc libskpokereval.a  CMakeFiles/skpokereval.dir/FiveEval.cpp.o
-/usr/bin/ranlib libskpokereval.a

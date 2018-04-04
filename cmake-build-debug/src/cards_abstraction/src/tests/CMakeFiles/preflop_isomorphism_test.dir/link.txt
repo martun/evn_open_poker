@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++14 -Woverloaded-virtual -DBOOST_LOG_DYN_LINK -g  -rdynamic CMakeFiles/preflop_isomorphism_test.dir/test_main.cpp.o CMakeFiles/preflop_isomorphism_test.dir/preflop_isomorphism_test.cpp.o  -o preflop_isomorphism_test ../libBucketingLib.a ../../../../third_party/googletest/googletest/libgtestd.a ../libEhsLib.a ../libIsomorphismLib.a -pthread 

@@ -1,5 +1,0 @@
-/home/lev/Downloads/clion-2017.3.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/lev/Git/evn_open_poker
-/home/lev/Git/evn_open_poker
--- Configuring done
--- Generating done
--- Build files have been written to: /home/lev/Git/evn_open_poker/cmake-build-debug

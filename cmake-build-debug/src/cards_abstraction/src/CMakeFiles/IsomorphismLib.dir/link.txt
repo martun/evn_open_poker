@@ -1,2 +1,0 @@
-/usr/bin/ar qc libIsomorphismLib.a  CMakeFiles/IsomorphismLib.dir/cards_abstraction_builder.cpp.o CMakeFiles/IsomorphismLib.dir/cards_abstraction_provider.cpp.o CMakeFiles/IsomorphismLib.dir/card_abstraction_helper.cpp.o CMakeFiles/IsomorphismLib.dir/cards_abstraction_storage.cpp.o CMakeFiles/IsomorphismLib.dir/card.cpp.o
-/usr/bin/ranlib libIsomorphismLib.a

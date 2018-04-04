@@ -1,1 +1,0 @@
-/usr/bin/c++  -g -Wall -g  -rdynamic CMakeFiles/eval_tests.dir/tests/five_eval_tests.cpp.o CMakeFiles/eval_tests.dir/tests/seven_eval_tests.cpp.o  -o ../../build/eval_tests ../googletest/googletest/libgtest_maind.a ../../build/libskpokereval.a ../googletest/googletest/libgtestd.a -pthread 
