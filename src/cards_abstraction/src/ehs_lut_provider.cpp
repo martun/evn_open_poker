@@ -1,10 +1,4 @@
-#include "../ehs_lut_provider.h"
-
-EhsLutProvider::EhsLutProvider()
-{
-}
-#include "../ehs_lut_provider.h"
-#include <cmath>
+#include "ehs_lut_provider.h"
 
 EhsLutProvider::EhsLutProvider(
         std::shared_ptr<CardsAbstractionProvider>& cardsAbstractionProvider,

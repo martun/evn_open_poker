@@ -1,4 +1,4 @@
-#include "../bucket_config.h"
+#include "bucket_config.h"
 
 BucketConfig::BucketConfig()
 {

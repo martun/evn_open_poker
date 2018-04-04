@@ -1,5 +1,6 @@
 #pragma once
-#include "../../third_party/SKPokerEval/src/SevenEval.h"
+
+#include "SevenEval.h"
 #include "ehs_lut_storage.h"
 #include "cards_abstraction_provider.h"
 

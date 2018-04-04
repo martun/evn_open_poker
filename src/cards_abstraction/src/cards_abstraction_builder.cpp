@@ -1,5 +1,5 @@
-#include "../cards_abstraction_builder.h"
-#include "../Utils.h"
+#include "cards_abstraction_builder.h"
+#include "Utils.h"
 
 CardsAbstractionBuilder::CardsAbstractionBuilder(CardsAbstractionStorage& s)
 {
@@ -13,9 +13,9 @@ void CardsAbstractionBuilder::build_all(){
     storage->save("cardsAbstractionLUTs.bin");
 }
 
-const CardsAbstractionStorage &CardsAbstractionBuilder::getStorage() const {
-    return *storage;
-}
+//const CardsAbstractionStorage &CardsAbstractionBuilder::getStorage() const {
+//    return *storage;
+//}
 
 void CardsAbstractionBuilder::build_preflop() {
     uint32_t index=0;

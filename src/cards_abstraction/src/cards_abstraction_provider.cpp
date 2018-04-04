@@ -1,4 +1,4 @@
-#include "../cards_abstraction_provider.h"
+#include "cards_abstraction_provider.h"
 #include <cmath>
 
 CardsAbstractionProvider::CardsAbstractionProvider(

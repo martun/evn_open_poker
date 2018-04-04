@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include <glog/logging.h>
+//#include <glog/logging.h>
 
 std::string topLevelProjectDir;
 

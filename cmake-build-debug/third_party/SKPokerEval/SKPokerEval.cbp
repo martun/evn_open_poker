@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="SKPokerEval"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\cards_abstraction\;CMake Files\src\cards_abstraction\src\;CMake Files\src\cards_abstraction\src\tests\;CMake Files\third_party\;CMake Files\third_party\googletest\;CMake Files\third_party\googletest\googletest\;CMake Files\third_party\googletest\googletest\cmake\;CMake Files\third_party\SKPokerEval\;CMake Files\third_party\SKPokerEval\src\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/lev/Git/evn_open_poker/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\cards_abstraction\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\cards_abstraction\src\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\cards_abstraction\src\tests\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\third_party\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\third_party\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\SKPokerEval\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\SKPokerEval\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/SKConfig.h.in">
+			<Option virtualFolder="CMake Files\third_party\SKPokerEval\src\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\SKPokerEval\src\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/SKConfig.h.in">
+			<Option virtualFolder="CMake Files\third_party\SKPokerEval\src\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\SKPokerEval\src\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

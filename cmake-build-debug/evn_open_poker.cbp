@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="evn_open_poker"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/lev/Git/evn_open_poker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/lev/Git/evn_open_poker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/lev/Git/evn_open_poker/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="evn_open_poker">
+				<Option output="/home/lev/Git/evn_open_poker/cmake-build-debug/evn_open_poker" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lev/Git/evn_open_poker/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 evn_open_poker"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="evn_open_poker/fast">
+				<Option output="/home/lev/Git/evn_open_poker/cmake-build-debug/evn_open_poker" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lev/Git/evn_open_poker/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 evn_open_poker/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/Utils.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/bucket_config.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/bucketing_provider.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/card.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/card_abstraction_helper.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/cards_abstraction_builder.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/cards_abstraction_provider.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/cards_abstraction_storage.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/ehs_bucketing_builder.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/ehs_bucketing_provider.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/ehs_lut_builder.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/ehs_lut_provider.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/ehs_lut_storage.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/history_bucketing_builder.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/history_bucketing_provider.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/bucket_config.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/bucketing_provider.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/card.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/card_abstraction_helper.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/cards_abstraction_builder.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/cards_abstraction_provider.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/cards_abstraction_storage.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/ehs_bucketing_builder.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/ehs_bucketing_provider.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/ehs_lut_builder.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/ehs_lut_provider.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/ehs_lut_storage.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/history_bucketing_builder.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/history_bucketing_provider.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/tests/preflop_isomorphism_test.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/tests/test_main.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/codegear/gtest_all.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/codegear/gtest_link.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/fused-src/gtest/gtest-all.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/fused-src/gtest/gtest.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/fused-src/gtest/gtest_main.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/gtest-death-test.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/gtest-message.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/gtest-param-test.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/gtest-printers.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/gtest-spi.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/gtest-test-part.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/gtest-typed-test.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/gtest.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/gtest_pred_impl.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/gtest_prod.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/internal/gtest-death-test-internal.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/internal/gtest-filepath.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/internal/gtest-internal.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/internal/gtest-linked_ptr.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/internal/gtest-param-util-generated.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/internal/gtest-param-util.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/internal/gtest-port.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/internal/gtest-string.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/internal/gtest-tuple.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/include/gtest/internal/gtest-type-util.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/samples/prime_tables.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/samples/sample1.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/samples/sample1.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/samples/sample10_unittest.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/samples/sample1_unittest.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/samples/sample2.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/samples/sample2.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/samples/sample2_unittest.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/samples/sample3-inl.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/samples/sample3_unittest.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/samples/sample4.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/samples/sample4.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/samples/sample4_unittest.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/samples/sample5_unittest.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/samples/sample6_unittest.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/samples/sample7_unittest.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/samples/sample8_unittest.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/samples/sample9_unittest.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/src/gtest-all.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/src/gtest-death-test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/src/gtest-filepath.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/src/gtest-internal-inl.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/src/gtest-port.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/src/gtest-printers.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/src/gtest-test-part.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/src/gtest-typed-test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/src/gtest.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/src/gtest_main.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest-death-test_ex_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest-death-test_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest-filepath_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest-linked_ptr_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest-listener_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest-message_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest-options_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest-param-test2_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest-param-test_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest-param-test_test.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest-port_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest-printers_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest-test-part_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest-tuple_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest-typed-test2_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest-typed-test_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest-typed-test_test.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest-unittest-api_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_all_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_break_on_failure_unittest_.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_catch_exceptions_test_.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_color_test_.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_env_var_test_.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_environment_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_filter_unittest_.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_help_test_.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_list_tests_unittest_.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_main_unittest.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_no_test_unittest.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_output_test_.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_pred_impl_unittest.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_premature_exit_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_prod_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_repeat_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_shuffle_test_.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_sole_header_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_stress_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_throw_on_failure_ex_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_throw_on_failure_test_.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_uninitialized_test_.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_unittest.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_xml_outfile1_test_.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_xml_outfile2_test_.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/gtest_xml_output_unittest_.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/production.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/test/production.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/lib/gtest-1.7.0/xcode/Samples/FrameworkSample/widget_test.cc">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/Constants.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/Deckcards.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/FiveEval.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/FiveEval.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/FlushCheck.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/FlushRanks.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/Profiler.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/RankHash.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/RankOffsets.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/SevenEval.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/tests/Parallel.h">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/tests/five_eval_tests.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/tests/seven_eval_tests.cpp">
+			<Option target="evn_open_poker"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

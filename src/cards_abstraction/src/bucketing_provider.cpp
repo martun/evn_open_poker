@@ -1,4 +1,4 @@
-#include "../bucketing_provider.h"
+#include "bucketing_provider.h"
 
 
 BucketingProvider::BucketingProvider(const BucketConfig& config)

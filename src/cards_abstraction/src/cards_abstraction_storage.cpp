@@ -1,5 +1,5 @@
-#include "../cards_abstraction_storage.h"
-#include "../cards_abstraction_builder.h"
+#include "cards_abstraction_storage.h"
+#include "cards_abstraction_builder.h"
 #include <fstream>
 
 CardsAbstractionStorage::CardsAbstractionStorage() {
@@ -27,7 +27,7 @@ void CardsAbstractionStorage::save(const std::string& file_path) const {
   save_indexes_to_string(turn_index_table, turnIndexTable);
   save_indexes_to_string(river_index_table, riverIndexTable);
 
-      FILE*  out=fopen((const char*)file_path,"w");
+      FILE*  out=fopen(file_path.c_str(),"w");
     // writing the sizes into file
     uint32_t preflopCTableSize = preflopCardTable.size();
     fwrite (&preflopCTableSize
@@ -114,7 +114,7 @@ void CardsAbstractionStorage::save(const std::string& file_path) const {
 }
 
 void CardsAbstractionStorage::load(const std::string& file_path) {
-      FILE* in=fopen((const char *) file_path, "r");  //tries to open file
+      FILE* in=fopen( file_path.c_str(), "r");  //tries to open file
       if(in==NULL){                   //if file not exists existes
         throw "File is not existing";
       }

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="SevenEval.h"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\cards_abstraction\;CMake Files\src\cards_abstraction\src\;CMake Files\src\cards_abstraction\src\tests\;CMake Files\third_party\;CMake Files\third_party\googletest\;CMake Files\third_party\googletest\googletest\;CMake Files\third_party\googletest\googletest\cmake\;CMake Files\third_party\SKPokerEval\;CMake Files\third_party\SKPokerEval\src\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/src"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/src/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="skpokereval">
+				<Option output="/home/lev/Git/evn_open_poker/cmake-build-debug/build/libskpokereval.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lev/Git/evn_open_poker/src"/>
+					<Add directory="/home/lev/Git/evn_open_poker/third_party/googletest/googletest/include"/>
+					<Add directory="/home/lev/Git/evn_open_poker/third_party/googletest/googletest"/>
+					<Add directory="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/generated"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/src/Makefile&quot;  VERBOSE=1 skpokereval"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="skpokereval/fast">
+				<Option output="/home/lev/Git/evn_open_poker/cmake-build-debug/build/libskpokereval.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lev/Git/evn_open_poker/src"/>
+					<Add directory="/home/lev/Git/evn_open_poker/third_party/googletest/googletest/include"/>
+					<Add directory="/home/lev/Git/evn_open_poker/third_party/googletest/googletest"/>
+					<Add directory="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/generated"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/src/Makefile&quot;  VERBOSE=1 skpokereval/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lev/Git/evn_open_poker/cmake-build-debug/third_party/SKPokerEval/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/SevenEval.h">
+			<Option target="skpokereval"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\cards_abstraction\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\cards_abstraction\src\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/src/cards_abstraction/src/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\cards_abstraction\src\tests\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\third_party\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\third_party\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\SKPokerEval\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\SKPokerEval\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/SKConfig.h.in">
+			<Option virtualFolder="CMake Files\third_party\SKPokerEval\src\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\SKPokerEval\src\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/SKConfig.h.in">
+			<Option virtualFolder="CMake Files\third_party\SKPokerEval\src\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\SKPokerEval\src\"/>
+		</Unit>
+		<Unit filename="/home/lev/Git/evn_open_poker/third_party/SKPokerEval/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\SKPokerEval\src\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libBucketingLib.a  CMakeFiles/BucketingLib.dir/bucket_config.cpp.o CMakeFiles/BucketingLib.dir/bucketing_provider.cpp.o CMakeFiles/BucketingLib.dir/ehs_bucketing_builder.cpp.o CMakeFiles/BucketingLib.dir/history_bucketing_builder.cpp.o CMakeFiles/BucketingLib.dir/ehs_bucketing_provider.cpp.o CMakeFiles/BucketingLib.dir/history_bucketing_provider.cpp.o
+/usr/bin/ranlib libBucketingLib.a

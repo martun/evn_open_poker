@@ -20,16 +20,16 @@ set(CMAKE_BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR})
 
 # this will prohibit in-source-builds
 if(${CMAKE_BINARY_DIR} STREQUAL ${CMAKE_SOURCE_DIR})
-  message(STATUS "In-source-builds are not allowed")
-  message(STATUS "Clean your source directory (e.g. delete the CMakeCache.txt file)")
-  message(FATAL_ERROR "Please create a separate build directory and call CMake again")
+    message(STATUS "In-source-builds are not allowed")
+    message(STATUS "Clean your source directory (e.g. delete the CMakeCache.txt file)")
+    message(FATAL_ERROR "Please create a separate build directory and call CMake again")
 endif(${CMAKE_BINARY_DIR} STREQUAL ${CMAKE_SOURCE_DIR})
 
 # CMAKE_BUILD_TYPE can be Release/Debug
 if (NOT CMAKE_BUILD_TYPE)
-  message(STATUS "No build type selected, default to Debug")
-  message(STATUS "To change pass -DCMAKE_BUILD_TYPE on command line")
-  set(CMAKE_BUILD_TYPE "Debug")
+    message(STATUS "No build type selected, default to Debug")
+    message(STATUS "To change pass -DCMAKE_BUILD_TYPE on command line")
+    set(CMAKE_BUILD_TYPE "Debug")
 endif()
 
 set (CXX_STANDARD "c++14")
@@ -43,38 +43,40 @@ set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=${CXX_STANDARD} -Woverloaded-virtu
 
 # these below apply to C and C++ files
 add_compile_options(
-  -Wall
-  -Wextra
-  -Werror
-  -Wstrict-aliasing
-  -Wno-unused-parameter
-  -Wno-missing-field-initializers
-  -Wno-unused-but-set-parameter
-  -Wimplicit-fallthrough=0
-  -Wchar-subscripts
-  -Wpointer-arith
-  -Wformat
-  -Wformat-security
-  -Werror=format-security
-  -fstack-protector-all
-  -fPIE
-  -fpie
-  -fPIC
-  -fpic
-  -pipe
-  -fdata-sections
-  -ffunction-sections
+        -Wall
+        -Wextra
+        -Werror
+        -Wstrict-aliasing
+        -Wno-unused-parameter
+        -Wno-missing-field-initializers
+        -Wno-unused-but-set-parameter
+#        -Wimplicit-fallthrough=0
+        -Wchar-subscripts
+        -Wpointer-arith
+        -Wformat
+        -Wformat-security
+        -Werror=format-security
+        -fstack-protector-all
+        -fPIE
+        -fpie
+        -fPIC
+        -fpic
+        -pipe
+        -fdata-sections
+        -ffunction-sections
 )
 
 
 # all headers specified
 include_directories(
-  ${CMAKE_SOURCE_DIR}/src
+        ${CMAKE_SOURCE_DIR}/src
+        ${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR}
+        ${CMAKE_SOURCE_DIR}/third_party/SKPokerEval/src
 )
-
 message(${CMAKE_SOURCE_DIR})
 
 # Include cppcheck target.  must come after compiler flags defined
 #include(cppcheck)
-
 add_subdirectory(src)
+add_subdirectory(third_party/googletest/googletest/)
+add_subdirectory(third_party/SKPokerEval/)

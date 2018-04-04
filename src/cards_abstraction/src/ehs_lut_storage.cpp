@@ -1,5 +1,5 @@
-#include "../ehs_lut_storage.h"
-#include "../ehs_lut_builder.h"
+#include "ehs_lut_storage.h"
+#include "ehs_lut_builder.h"
 EhsLutStorage::EhsLutStorage() {
 
 }
@@ -25,7 +25,7 @@ void EhsLutStorage::save(const std::string& file_path) const {
     std::string riverEhsSquaredTable;
     save_to_string(river_ehs_squared_table,riverEhsSquaredTable);
 
-    FILE*  out=fopen((const char*)file_path,"w");
+    FILE*  out=fopen(file_path.c_str(),"w");
     // writing the sizes
     uint32_t preFlopEhsTableSize = preflopEhsTable.size();
     fwrite (&preFlopEhsTableSize
@@ -76,7 +76,7 @@ void EhsLutStorage::save(const std::string& file_path) const {
             , sizeof(char)
             , turnEhsTableSize
             , out )
-        !=turnEhsTableSize
+        !=turnEhsTableSize)
           throw "Error while writing to file";
     if(fwrite (turnEhsSquaredTable.c_str()
             , sizeof(char)
@@ -102,7 +102,7 @@ void EhsLutStorage::save(const std::string& file_path) const {
 
 void EhsLutStorage::load(std::shared_ptr<CardsAbstractionProvider>& cardsAbstractionProvider,
                          const std::string& file_path) {
-    FILE* in=fopen((const char *) file_path, "r");  //tries to open file
+    FILE* in=fopen(file_path.c_str(), "r");  //tries to open file
     if(in==NULL){                   //if file not exists existes
         throw "File is not existing";
 
@@ -175,11 +175,11 @@ void EhsLutStorage::load(std::shared_ptr<CardsAbstractionProvider>& cardsAbstrac
     fclose(in);
 }
 
-void EhsLutStorage::save_to_string(std::unordered_map<uint32_t ,double >& table,
+void EhsLutStorage::save_to_string(const std::unordered_map<uint32_t ,double >& table,
                                    std::string& str_out) const {
     uint32_t str_size = table.size() * (sizeof(uint32_t) + sizeof(double));
     str_out.resize(str_size);
-    int count = 0;
+    unsigned int count = 0;
     auto itr = table.begin();
     while(count!=str_size) {
         memcpy(&str_out[0] + count, &itr->first, sizeof(uint32_t));

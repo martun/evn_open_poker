@@ -23,7 +23,7 @@ public:
 	void build_turn();
 	void build_river();
 
-	const CardsAbstractionStorage& &getStorage() const;
+//	const CardsAbstractionStorage& &getStorage() const;
 
 
 private:
