@@ -66,7 +66,7 @@ add_compile_options(
         -ffunction-sections
 )
 
-
+include(CTest)
 # all headers specified
 include_directories(
         ${CMAKE_SOURCE_DIR}/src

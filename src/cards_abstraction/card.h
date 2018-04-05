@@ -7,7 +7,7 @@ class Card
 {
 public:
 	Card(uint8_t card);
-
+	Card(uint8_t suit, uint8_t rank);
 	/// Returns the suit of the card, a number from range [0..3].
 	uint8_t get_suit() const;
 
