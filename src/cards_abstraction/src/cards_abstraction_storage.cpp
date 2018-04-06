@@ -227,15 +227,15 @@ void CardsAbstractionStorage::load(const std::string& file_path) {
 void CardsAbstractionStorage::save_indexes_to_string(
     const std::unordered_map<size_t ,unsigned int>& table,
     std::string &str_out) const {
-  int size = table.size() * (sizeof(uint32_t) + sizeof(uint));
+  int size = table.size() * (sizeof(size_t) + sizeof(unsigned int));
   str_out.resize(size);
   auto itr = table.begin();
   int count=0;
   while(count!=size) {
-    memcpy(&str_out[0] + count, &itr->first, sizeof(uint32_t));
-    count += sizeof(uint32_t);
-    std::memcpy(&str_out[0] + count, &itr->second, sizeof(uint));
-    count += sizeof(uint);
+    memcpy(&str_out[0] + count, &itr->first, sizeof(size_t));
+    count += sizeof(size_t);
+    std::memcpy(&str_out[0] + count, &itr->second, sizeof(unsigned int));
+    count += sizeof(unsigned int);
     itr++;
   }
 }
@@ -243,13 +243,13 @@ void CardsAbstractionStorage::save_indexes_to_string(
 void CardsAbstractionStorage::load_indexes_from_string(
     const std::string& str,
     std::unordered_map<size_t, unsigned int> &table) {
-  uint32_t size = str.size() / (sizeof(uint32_t) + sizeof(uint));
-  uint32_t step = sizeof(uint32_t) + sizeof(uint32_t);
+  uint32_t size = str.size() / (sizeof(size_t) + sizeof(unsigned int));
+  uint32_t step = sizeof(size_t) + sizeof(unsigned int);
   size_t hash;
   uint32_t index;
   for(uint32_t i=0; i<size; i++){
-    memcpy(&hash,&str[0] + i * step, sizeof(uint32_t));
-    memcpy(&index,&str[0] + i * step + sizeof(uint32_t), sizeof(uint32_t));
+    memcpy(&hash,&str[0] + i * step, sizeof(size_t));
+    memcpy(&index,&str[0] + i * step + sizeof(size_t), sizeof(unsigned int));
     table.insert({{hash,index}});
   }
 

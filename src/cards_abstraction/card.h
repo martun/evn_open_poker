@@ -16,7 +16,7 @@ public:
 
 	uint8_t get_card_num() const;
 
-	Card operator==(const Card& other){
+	Card operator==(const Card& other) const{
 
 		return this->card_==other.card_;
 	}
