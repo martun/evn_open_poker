@@ -1,4 +1,4 @@
-
+#include <algorithm>
 #include "KMeans.h"
 
 KMeans::KMeans(int K, int total_points, int total_values, int max_iterations) {

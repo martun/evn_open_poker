@@ -259,16 +259,16 @@ void CardsAbstractionStorage::save_cards_to_string(
     Round r,
     std::string& str_out) const {
   int num_of_cards = r + 2;
-  int size = table.size() * (sizeof(uint) + sizeof(uint) * num_of_cards);
+  int size = table.size() * (sizeof(uint32_t) + sizeof(uint32_t) * num_of_cards);
   str_out.resize(size);
   auto itr = table.begin();
   int count=0;
   for(uint32_t i=0;i<table.size();i++){
-    std::memcpy(&str_out[0]+count, &itr->first, sizeof(uint));
-    count+= sizeof(uint);
+    std::memcpy(&str_out[0]+count, &itr->first, sizeof(uint32_t));
+    count+= sizeof(uint32_t);
     for(int j=0;j<num_of_cards;j++){
-      std::memcpy(&str_out[0] + count, &itr->second[j], sizeof(uint));
-      count+= sizeof(uint);
+      std::memcpy(&str_out[0] + count, &itr->second[j], sizeof(uint32_t));
+      count+= sizeof(uint32_t);
     }
     itr++;
   }
@@ -279,20 +279,20 @@ void CardsAbstractionStorage::load_cards_from_string(
     Round r,
     std::unordered_map<unsigned int,std::vector<Card>> &table_out) {
   int num_of_cards = r + 2;
-  int size = str.size()/(sizeof(uint) + sizeof(uint) * num_of_cards);
+  int size = static_cast<int>(str.size() / (sizeof(uint32_t) + sizeof(uint32_t) * num_of_cards));
   int count = 0;
 
   for(int i = 0; i < size; ++i){
     int index;
 
-    memcpy(&index, &str[count], sizeof(uint));
+    memcpy(&index, &str[count], sizeof(uint32_t));
 
-    count += sizeof(uint);
+    count += sizeof(uint32_t);
     std::vector<Card> cards;
     for(int j=0;j<num_of_cards;j++){
       int card;
-      memcpy(&card,&str[count], sizeof(uint));
-      count += sizeof(uint);
+      memcpy(&card,&str[count], sizeof(uint32_t));
+      count += sizeof(uint32_t);
       cards.push_back(Card(card));
     }
     table_out.insert({{index,cards}});

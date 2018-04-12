@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <vector>
-#include <math.h>
+#include <cmath>
 #include "Point.h"
 #include "Cluster.h"
 
