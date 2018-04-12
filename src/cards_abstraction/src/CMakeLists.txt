@@ -28,4 +28,4 @@ add_library(BucketingLib
 target_link_libraries(BucketingLib
 		EhsLib)
 
-add_subdirectory(tests)
+#add_subdirectory(tests)
