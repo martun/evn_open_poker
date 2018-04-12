@@ -72,6 +72,9 @@ include_directories(
         ${CMAKE_SOURCE_DIR}/src
         ${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR}
         ${CMAKE_SOURCE_DIR}/third_party/SKPokerEval/src
+        ${CMAKE_SOURCE_DIR}/third_party/Kmeans/src
+
+
 )
 message(${CMAKE_SOURCE_DIR})
 
@@ -80,3 +83,4 @@ message(${CMAKE_SOURCE_DIR})
 add_subdirectory(src)
 add_subdirectory(third_party/googletest/googletest/)
 add_subdirectory(third_party/SKPokerEval/)
+add_subdirectory(third_party/Kmeans/)

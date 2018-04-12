@@ -1,6 +1,6 @@
 #include "ehs_lut_builder.h"
 
-#define PreflopTableSize 169
+
 
 EhsLutBuilder::EhsLutBuilder(std::shared_ptr<CardsAbstractionProvider>& cardsAbstractionProvider,
                              EhsLutStorage& storage)

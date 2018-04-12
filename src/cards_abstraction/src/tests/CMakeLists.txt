@@ -115,3 +115,14 @@ target_link_libraries(load_save_iso_tables_test
         BucketingLib
         gtest
         )
+
+
+
+add_executable(save_to_file_load_test
+        test_main.cpp
+        Save_To_file_load_test.cpp
+        )
+target_link_libraries(save_to_file_load_test
+        BucketingLib
+        gtest
+        )

@@ -1,5 +1,7 @@
 #pragma once
 
+#define PreflopTableSize 169
+
 #define CARDNUM 52
 // Enum for poker rounds.
 enum Round {
